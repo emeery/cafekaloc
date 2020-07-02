@@ -10,7 +10,7 @@ import wm from "../../src/assets/kaloc.png";
 const styles = (theme) => ({
   root: { flexGrow: 1 },
   menuButton: { marginRight: theme.spacing(2) },
-  rick: { width: "80px", marginLeft: 45 },
+  icon: { width: "80px" },
   title: { flexGrow: 1 },
   button: { color: "aliceblue" },
 });
@@ -38,7 +38,7 @@ class Navbar extends Component {
               color='inherit'
               aria-label='menu'
             >
-              <img src={wm} className={classes.rick} alt='morty' />
+              <img src={wm} className={classes.icon} alt='morty' />
             </IconButton>
             <div variant='h6' className={classes.title}></div>
             <NavLink to='/'>

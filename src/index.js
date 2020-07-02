@@ -10,7 +10,7 @@ const routing = (
     <Router>
 
       <Toolbar />
-      <div class="sidenav"></div>
+      
         <Route exact path="/" component={Dashboard} />
     </Router>
   </div>
