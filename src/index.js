@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
 import Toolbar from './components/Toolbar';
+
 import './index.css';
 const routing = (
   <div>
     <Router>
+
       <Toolbar />
-      <div>
+      <div class="sidenav"></div>
         <Route exact path="/" component={Dashboard} />
-      </div>
     </Router>
   </div>
 )

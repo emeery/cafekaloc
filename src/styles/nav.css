@@ -1,0 +1,75 @@
+.nav-contenedor nav {
+    background-color: beige;
+    border-width: 5px;
+    border-style: solid;
+    border-bottom-color: indianred;
+}
+
+.nav-contenedor .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 20px;
+}
+
+
+/* .nav-contenedor__enlaces .enlace {
+    color: #2e4053;
+    text-decoration: none;
+    outline: none;
+} */
+
+
+/* .nav-contenedor .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 20px;
+} */
+
+
+/* .nav-contenedor__enlaces .enlace {
+    color: #2e4053;
+    text-decoration: none;
+    outline: none;
+} */
+
+.fa-github {
+    color: lightblue;
+    /* &:hover {
+        color: lightseagreen; 
+    } */
+}
+
+.fa-angle-right {
+    color: lightseagreen;
+}
+
+.fa-jsfiddle {
+    color: lightblue;
+}
+
+.fa-codepen {
+    color: lightblue;
+    /* &:hover {
+        color: lightseagreen;
+    } */
+}
+
+.nav-contenedor__barra hr {
+    width: 150px;
+    padding-left: 50px;
+    margin: auto;
+    float: center;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, #ccc, black, #ccc);
+}
+
+.nav-contenedor__logo-jerry p {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-bottom: 15rem;
+}
