@@ -38,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
     color: 'lightsteelblue',
     borderBottomColor: '2px solid red',
     height: 50,
-    fontFamily: 'Oswald',
-    fontSize: 20,
+    fontFamily: 'Bebas Neue',
+    fontSize: '6vw',
     textAlign: "center",
   },
   stripe: {
