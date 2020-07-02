@@ -56,10 +56,10 @@ const Dashboard = () => {
     <div className={classes.root}>
 
       <Grid container spacing={2}>
-      <Grid item xs={5} sm={6}>
+      <Grid item xs={12} sm={6}>
           <Paper className={classes.scheduleContainer}></Paper>
         </Grid>
-        <Grid item xs={5} sm={6}>
+        <Grid item xs={12} sm={6}>
           <Paper className={classes.saucerContainer}></Paper>
         </Grid>
         <Grid item xs={12} sm={12}>
