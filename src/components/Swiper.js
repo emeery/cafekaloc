@@ -6,8 +6,8 @@ import '../styles/swiper.css';
 // images
 import image1 from '../assets/cafe2.jpg';
 import image2 from '../assets/cafe3.jpg';
-import image3 from'../assets/cafe4.jpg';
-
+// import image3 from '../assets/cafe4.jpg';
+import image4 from '../assets/cafe6.jpg';
 // slider config
 const HeroSliderConfigs = {
   containerClass: 'swiper-container hero-slider',
@@ -60,7 +60,7 @@ const HeroSlider = () => {
           data-swiper-parallax={parallaxAmount}
           data-swiper-parallax-opacity={parallaxOpacity}
         >
-          <img src={image3} alt="image3"></img>
+          <img src={image4} alt="image3"></img>
         </div>
         <div className="col-md-6 offset-md-3 my-auto text-center text-white">
           <p style={{color: '#328c99'}}>

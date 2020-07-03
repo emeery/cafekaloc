@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import "../styles/dashboard.css";
 import Swiper from '../components/Swiper';
 import Image from "../assets/cafe1.jpg";
-import Sauce from "../assets/cafe2.jpg";
+import Cafe from "../assets/cafe5.jpg";
 import Break from "../assets/Better_Breakfast.svg";
 import Didi from "../assets/didifood.png";
 const useStyles = makeStyles((theme) => ({
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     height: 410,
   },
   saucerContainer: {
-    background: `url(${Sauce})`,
+    background: `url(${Cafe})`,
     backgroundSize: "cover",
     height: 410,
   },
