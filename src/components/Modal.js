@@ -35,7 +35,7 @@ class Modal extends Component {
     const { open } = this.state;
     const { classes } = this.props;
     return (
-      <Fragment className={classes.root}>
+      <Fragment >
         <Button onClick={this.handleToggle}>Contacto</Button>
         <Dialog open={open} fullWidth={true} maxWidth={"sm"}>
           <DialogTitle

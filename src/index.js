@@ -8,9 +8,7 @@ import './index.css';
 const routing = (
   <div>
     <Router>
-
       <Toolbar />
-      
         <Route exact path="/" component={Dashboard} />
     </Router>
   </div>
