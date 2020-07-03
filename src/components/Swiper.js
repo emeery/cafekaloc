@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-
-// react-id-swiper
 import 'swiper/css/swiper.css';
 import Swiper from 'react-id-swiper';
-
-// custom css
 import '../styles/swiper.css';
 
 // images
@@ -12,7 +8,7 @@ import image1 from '../assets/cafe2.jpg';
 import image2 from '../assets/cafe3.jpg';
 import image3 from'../assets/cafe4.jpg';
 
-// slider configuration
+// slider config
 const HeroSliderConfigs = {
   containerClass: 'swiper-container hero-slider',
   parallax: true,
@@ -25,6 +21,24 @@ const HeroSliderConfigs = {
     delay: 1500,
     disableOnInteraction: false
   },
+  breakpoints: {
+    // 1024: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 40
+    // },
+    // 768: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30
+    // },
+    // 640: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 20
+    // },
+    // 320: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 10
+    // }
+  }
 };
 
 // slider component
@@ -42,15 +56,7 @@ const HeroSlider = () => {
         >
           <img src={image1} alt="image1"></img>
         </div>
-        <div className="col-md-6 offset-md-3 my-auto text-center text-white">
-          <h1 className="text-uppercase mb-2 font-weight-bold">Slide 1</h1>
-          <p className="mb-5 small">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque,
-            ex quibusdam dolorem quae itaque velit. Nobis nesciunt sed corrupti
-            ab quia neque, porro laborum error, autem facilis voluptates
-            laboriosam?
-          </p>
-        </div>
+        
       </div>
       <div className="hero-slide">
         <div
@@ -60,15 +66,7 @@ const HeroSlider = () => {
         >
           <img src={image2} alt="image2"></img>
         </div>
-        <div className="col-md-6 offset-md-3 my-auto text-center text-white">
-          <h1 className="text-uppercase mb-2 font-weight-bold">Slide 1</h1>
-          <p className="mb-5 small">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque,
-            ex quibusdam dolorem quae itaque velit. Nobis nesciunt sed corrupti
-            ab quia neque, porro laborum error, autem facilis voluptates
-            laboriosam?
-          </p>
-        </div>
+        
       </div>
       <div className="hero-slide">
         <div
@@ -79,8 +77,7 @@ const HeroSlider = () => {
           <img src={image3} alt="image3"></img>
         </div>
         <div className="col-md-6 offset-md-3 my-auto text-center text-white">
-          <h1 className="text-uppercase mb-2 font-weight-bold">Slide 1</h1>
-          <p className="mb-5 small">
+          <p style={{color: '#328c99'}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque,
             ex quibusdam dolorem quae itaque velit. Nobis nesciunt sed corrupti
             ab quia neque, porro laborum error, autem facilis voluptates
