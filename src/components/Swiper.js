@@ -17,27 +17,13 @@ const HeroSliderConfigs = {
   speed: 500,
   spaceBetween: 0,
   effect: 'slide',
+  loop: true,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false
   },
-  breakpoints: {
-    // 1024: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 40
-    // },
-    // 768: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 30
-    // },
-    // 640: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 20
-    // },
-    // 320: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 10
-    // }
+  pagination: {
+    el: '.swiper-pagination',
   }
 };
 
