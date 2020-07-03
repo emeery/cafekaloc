@@ -2,10 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import "../styles/dashboard.css";
 import Image from "../assets/cafe1.jpg";
 import Sauce from "../assets/cafe2.jpg";
 import Break from "../assets/Better_Breakfast.svg";
-import "../styles/dashboard.css";
+import Didi from "../assets/didifood.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -43,15 +44,15 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   stripe: {
-    background: 'none',
-    height: 80,
+    background: '#333740',
+    height: 120,
     marginTop: 30,
   },
   transparent: {
     background: "transparent",
-    fontFamily: "Oswald",
-    fontSize: 19,
-    color: 'aliceblue',
+    fontFamily: "Bebas Neue",
+    fontSize: 22,
+    color: 'turquoise',
     boxShadow: "none",
     textAlign: "center",
   },
@@ -59,6 +60,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+    backgroundColor: "#333740"
+  },
+  didi: {
+    width: 85,
+    height: 70,
+    position: 'relative',
+// left: 50,
+margin: 'auto', 
+    background: `url(${Didi})`,
+    backgroundSize: "cover",
   },
 }));
 const Dashboard = () => {
@@ -80,10 +91,10 @@ const Dashboard = () => {
       </Grid>
       <Grid container className={classes.stripe}>
         <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.column}>
-          <Paper className={classes.transparent}>Política de Privacidad</Paper>
+          <div className={classes.didi}></div>
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.column}>
-          <Paper className={classes.transparent}>© Kaloc 2020</Paper>
+          <Paper className={classes.transparent}>© KA`LOC 2020</Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.column}>
           <Paper className={classes.transparent}>Instagram</Paper>
