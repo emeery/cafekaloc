@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Didi from "../assets/didifood.png";
-import Icon from "../assets/kaloc.png";
+import Icon from "../assets/kaloc2.png";
 const useStyles = makeStyles((theme) => ({
   stripe: {
     background: "#333740",
@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
   },
   icon: {
-    width: 85,
-    height: 70,
+    width: 107,
+    height: 40,
     position: "relative",
     margin: "auto",
     background: `url(${Icon})`,
