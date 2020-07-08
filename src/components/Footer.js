@@ -54,10 +54,10 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.stripe}>
-      <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.column}>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={classes.column}>
         <div className={classes.didi}> </div>
       </Grid>
-      <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.column}>
+      <Grid item xs={12} sm={12} md={6} lg={6} xl={6} className={classes.column}>
         <Paper className={classes.transparent}>© 2020 Café KA'LOC</Paper>
       </Grid>
     </Grid>
