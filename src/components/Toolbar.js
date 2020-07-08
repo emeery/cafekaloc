@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
-import { NavLink } from "react-router-dom";
-import Modal from "../components/Modal";
+// import { NavLink } from "react-router-dom";
+// import Modal from "../components/Modal";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import "../styles/dashboard.css";
-import wm from "../../src/assets/kaloc.png";
+import wm from "../../src/assets/kaloc3.png";
 const styles = (theme) => ({
   root: { height: 55 },
   menuButton: { marginRight: theme.spacing(2) },
@@ -17,7 +17,7 @@ const styles = (theme) => ({
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = { color: "#ecf0f1" };
+    this.state = { color: "#328c99" };
   }
   changeColor = (color) => {
     this.setState({ color });
