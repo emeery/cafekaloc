@@ -64,7 +64,7 @@ const Dashboard = () => {
         </Grid>
       </Grid>
       <Footer /> 
-      <a href="https://wa.me/5215518298385"><img alt="img" src="http://placehold.it/200x100" id="fixedbutton"></img></a>
+      <a href="https://api.whatsapp.com/send?phone=5215546484522"><img alt="img" src="http://placehold.it/200x100" id="fixedbutton"></img></a>
     </div>
   );
 };
