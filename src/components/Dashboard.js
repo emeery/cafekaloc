@@ -82,7 +82,7 @@ const Dashboard = () => {
           <img
             alt='img'
             target='_blank'
-            style={{ width: 43, margin: 10 }}
+            style={{ width: 43, margin: 15 }}
             src='https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png'
           ></img>
         </a>
