@@ -10,6 +10,7 @@ import Swiper from "../components/Swiper";
 import Image from "../assets/cafe1.jpg";
 import Cafe from "../assets/cafe5.jpg";
 import Break from "../assets/Better_Breakfast.svg";
+import Whats from "../assets/whatsapp-icon.png";
 import Footer from "../components/Footer";
 const useStyles = makeStyles((theme) => ({
   scheduleContainer: {
@@ -33,6 +34,15 @@ const useStyles = makeStyles((theme) => ({
     height: 345,
     marginTop: 20,
     boxShadow: "none",
+  },
+  whatsContainer: {
+    background: `url(${Whats})`,
+    backgroundSize: "cover",
+    // backgroundColor: "#328c99",
+    // position: "relative",
+    // margin: "auto",
+    width: 270,
+    height: 345,
   },
   stripeContainer: {
     background: "#42296f",
@@ -63,8 +73,20 @@ const Dashboard = () => {
           </Paper>
         </Grid>
       </Grid>
-      <Footer /> 
-      <a href="https://api.whatsapp.com/send?phone=5215546484522"><img alt="img" src="http://placehold.it/200x100" id="fixedbutton"></img></a>
+      <Footer />
+      <Paper>
+        <a
+          href='https://api.whatsapp.com/send?phone=5215546484522'
+          id='fixedbutton'
+        >
+          <img
+            alt='img'
+            target='_blank'
+            style={{ width: 43, margin: 10 }}
+            src='https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png'
+          ></img>
+        </a>
+      </Paper>
     </div>
   );
 };
