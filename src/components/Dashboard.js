@@ -63,7 +63,8 @@ const Dashboard = () => {
           </Paper>
         </Grid>
       </Grid>
-      <Footer />
+      <Footer /> 
+      <a href="https://wa.me/5215546484522"><img alt="img" src="http://placehold.it/200x100" id="fixedbutton"></img></a>
     </div>
   );
 };

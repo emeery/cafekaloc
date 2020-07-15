@@ -19,8 +19,8 @@ h2 {
     color: slateblue;
 }
 
-
-/* .makeStyles-stripe-10 {
-    font-family: 'Oswald', sans-serif !important;
-    color: red;
-} */
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
