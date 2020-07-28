@@ -11,6 +11,7 @@ import Image from "../assets/cafe1.jpg";
 import Cafe from "../assets/cafe5.jpg";
 import Break from "../assets/Better_Breakfast.svg";
 import Whats from "../assets/whatsapp-icon.png";
+import Toolbar from '../components/Toolbar';
 import Footer from "../components/Footer";
 const useStyles = makeStyles((theme) => ({
   scheduleContainer: {
@@ -59,20 +60,21 @@ const Dashboard = () => {
   const classes = useStyles();
   return (
     <div>
+    <Toolbar/>
       <Grid container spacing={2}>
-        <Swiper />
-        <Grid item xs={12} sm={6}>
+      
+        <Grid item xs={12} sm={12}>
           <Paper className={classes.scheduleContainer}></Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.saucerContainer}></Paper>
-        </Grid>
+        
+        <Swiper />
         <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
-            COME JOIN THE PARTY AT KALOC
+            25 AÑOS
           </Paper>
         </Grid>
       </Grid>
+
       <Footer />
       <Paper>
         <a

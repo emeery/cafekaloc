@@ -10,14 +10,14 @@ import wm from "../../src/assets/kaloc3.png";
 const styles = (theme) => ({
   root: { height: 55 },
   menuButton: { marginRight: theme.spacing(2) },
-  icon: { width: "70px" },
+  icon: { width: "90px" },
   title: { flexGrow: 1 },
   button: { color: "aliceblue" },
 });
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = { color: "#328c99" };
+    this.state = { color: "transparent" };
   }
   changeColor = (color) => {
     this.setState({ color });
