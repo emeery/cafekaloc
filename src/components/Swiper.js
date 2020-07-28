@@ -5,7 +5,7 @@ import '../styles/swiper.css';
 
 // images
 import image1 from '../assets/cafe2.jpg';
-import image2 from '../assets/cafe3.jpg';
+import image2 from '../assets/cafe6.jpg';
 // import image3 from '../assets/cafe4.jpg';
 import image4 from '../assets/cafe4.jpg';
 // slider config

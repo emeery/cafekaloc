@@ -3,16 +3,15 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-// css
-import "../styles/dashboard.css";
-// img
 import Swiper from "../components/Swiper";
 import Image from "../assets/cafe1.jpg";
 import Cafe from "../assets/cafe5.jpg";
 import Break from "../assets/Better_Breakfast.svg";
 import Whats from "../assets/whatsapp-icon.png";
-import Toolbar from '../components/Toolbar';
+import Toolbar from "../components/Toolbar";
 import Footer from "../components/Footer";
+import party from '../assets/partido.png';
+import "../styles/dashboard.css";
 const useStyles = makeStyles((theme) => ({
   scheduleContainer: {
     backgroundImage: `url(${Image})`,
@@ -52,25 +51,28 @@ const useStyles = makeStyles((theme) => ({
     borderBottomColor: "2px solid red",
     height: 50,
     fontFamily: "Bebas Neue",
-    fontSize: "6vw",
+    fontSize: "5vw",
     textAlign: "center",
   },
+  rotate: {
+    transform: "scaleX(-1)"
+  }
 }));
 const Dashboard = () => {
   const classes = useStyles();
   return (
     <div>
-    <Toolbar/>
+      <div className={classes.scheduleContainer}>
+        <Toolbar />
+      </div>
       <Grid container spacing={2}>
-      
-        <Grid item xs={12} sm={12}>
-          <Paper className={classes.scheduleContainer}></Paper>
-        </Grid>
-        
         <Swiper />
         <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
-            25 AÑOS
+            <img className={classes.rotate} src={party} alt="morty" />
+            &nbsp;
+            Ven a celebrar el 25 aniversario de KA'LOC &nbsp;
+            <img src={party} alt="morty" />
           </Paper>
         </Grid>
       </Grid>
@@ -85,7 +87,7 @@ const Dashboard = () => {
             alt='img'
             target='_blank'
             style={{ width: 43, margin: 15 }}
-            src='https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png'
+            src='https://images.vexels.com/media/users/3/153998/isolated/preview/3649440bec55058d9495a9e11013fedf-icono-de-trazo-coloreado-de-whatsapp-by-vexels.png'
           ></img>
         </a>
       </Paper>
