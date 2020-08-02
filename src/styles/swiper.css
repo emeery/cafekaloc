@@ -1,6 +1,4 @@
-.swiper-container {
-    margin-top: 18px;
-}
+.swiper-container {}
 
 
 /* @media screen and (max-width: 600px) {
@@ -38,9 +36,4 @@
 .hero-slider .content {
     position: relative;
     z-index: 2;
-}
-
-.hero-slider img {
-    max-width: auto;
-    height: auto;
 }

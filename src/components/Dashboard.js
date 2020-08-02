@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Swiper from "../components/Swiper";
+import Swiperr from "../components/Swiper";
 import Image from "../assets/cafe1.jpg";
 import Cafe from "../assets/cafe5.jpg";
 import Break from "../assets/Better_Breakfast.svg";
@@ -66,7 +66,7 @@ const Dashboard = () => {
         <Toolbar />
       </div>
       <Grid container spacing={2}>
-        <Swiper />
+        <Swiperr />
         <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
             <img className={classes.rotate} src={party} alt="morty" />
