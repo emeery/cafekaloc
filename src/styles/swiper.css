@@ -39,3 +39,7 @@
     position: relative;
     z-index: 2;
 }
+
+.hero-slider img {
+    max-width: auto;
+}

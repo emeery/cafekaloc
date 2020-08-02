@@ -6,7 +6,6 @@ import '../styles/swiper.css';
 // images
 import image1 from '../assets/arroz_mixto.jpg';
 import image2 from '../assets/chop_suey.jpg';
-// import image3 from '../assets/cafe4.jpg';
 import image4 from '../assets/combo_kaloc.jpg';
 // slider config
 const HeroSliderConfigs = {
