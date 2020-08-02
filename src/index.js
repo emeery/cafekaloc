@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import Dashboard from './components/Dashboard';
-// import Toolbar from './components/Toolbar';
+import Menu from './components/Menu';
 
 import './index.css';
 const routing = (
   <div>
     <Router>
         <Route exact path="/" component={Dashboard} />
+        <Route exact path="/menu" component={Menu} />
     </Router>
   </div>
 )

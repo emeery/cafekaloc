@@ -5,16 +5,17 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from '@material-ui/core/Button';
 import IconButton from "@material-ui/core/IconButton";
 // import MenuIcon from '@material-ui/icons/Menu';
-import "../styles/dashboard.css";
+import "../styles/nav.css";
 import wm from "../../src/assets/kaloc3.png";
 import { Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 const styles = (theme) => ({
   root: { height: 55 },
   menuButton: { marginRight: theme.spacing(2) },
   icon: { width: "90px" },
   bg: {background: "transparent",boxShadow: "none"},
   title: { flexGrow: 1 },
-  button: { color: "aliceblue" },
+  button: { color:"salmon", fontFamily: "Oswald" },
 });
 class Navbar extends Component {
   render() {
@@ -28,9 +29,9 @@ class Navbar extends Component {
         </IconButton>
         <Typography variant="h6" className={classes.title}>
         </Typography>
-        <Button color="inherit">Inicio</Button>
-        <Button color="inherit">Menu</Button>
-        <Button color="inherit">Contacto</Button>
+        <Button className={classes.button} component={ Link }  to="/">Inicio</Button>
+        <Button className={classes.button} component={ Link }  to="/menu">Menu</Button>
+        <Button className={classes.button} component={ Link }  to="/contacto">Contacto</Button>
       </Toolbar>
     </AppBar>
       </div>
