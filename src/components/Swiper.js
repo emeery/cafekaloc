@@ -10,6 +10,7 @@ import image4 from "../assets/combo_kaloc.jpg"; //
 const SimpleSlider = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
