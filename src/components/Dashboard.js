@@ -12,6 +12,7 @@ import Toolbar from "../components/Toolbar";
 import Footer from "../components/Footer";
 import party from '../assets/partido.png';
 import "../styles/dashboard.css";
+import Swiper from "swiper";
 const useStyles = makeStyles((theme) => ({
   scheduleContainer: {
     backgroundImage: `url(${Image})`,
@@ -65,7 +66,7 @@ const Dashboard = () => {
       <div className={classes.scheduleContainer}>
         <Toolbar />
       </div>
-      
+      <Swiperr/>
       <Grid container spacing={0}>
         
         <Grid item xs={12} sm={12}>

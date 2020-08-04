@@ -20,7 +20,7 @@ const SimpleSlider = () => {
   };
   return (
     <Fragment>
-      <div style={{ width: "98%",marginBottom:"2em",background:"transparent" }}>
+      <div style={{ width: "100%",marginBottom:"2em",background:"transparent" }}>
         <Slider {...settings}>
           <img src={image1} width='100%' alt='img1' />
           <img src={image2} width='100%' alt='img2' />
