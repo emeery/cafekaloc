@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 // ui
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -61,12 +61,13 @@ const useStyles = makeStyles((theme) => ({
 const Dashboard = () => {
   const classes = useStyles();
   return (
-    <div>
+    <Fragment>
       <div className={classes.scheduleContainer}>
         <Toolbar />
       </div>
-      <Grid container spacing={2}>
-        <Swiperr />
+      
+      <Grid container spacing={0}>
+        
         <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
             <img className={classes.rotate} src={party} alt="morty" />
@@ -91,7 +92,7 @@ const Dashboard = () => {
           ></img>
         </a>
       </Paper>
-    </div>
+    </Fragment>
   );
 };
 
