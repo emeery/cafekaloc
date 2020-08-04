@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 // images
 import image1 from "../assets/arroz_mixto.jpg";
 import image2 from "../assets/chop_suey.jpg";
-import image4 from "../assets/combo_kaloc.jpg";
+import image4 from "../assets/combo_kaloc.jpg"; //
 
 const SimpleSlider = () => {
   const settings = {
