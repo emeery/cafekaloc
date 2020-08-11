@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles,Paper,Grid } from "@material-ui/core";
 import Didi from "../../assets/didi-food.svg";
+import Didi4 from "../../assets/didi4.png";
 import Rappi from "../../assets/rappi-logo1.png";
 import Icon from "../../assets/kaloc2.png";
 
@@ -34,11 +35,12 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "#263238",
   },
   didi: {
-    width: 110,
+    width: 94,
     height: 50,
     position: "relative",
+    boxShadow: "none",
     margin: "auto",
-    background: `url(${Didi})`,
+    background: `url(${Didi4})`,
     backgroundSize: "cover",
   },
   didi2: {
@@ -70,7 +72,7 @@ const Footer = () => {
         <Paper className={classes.transparent}>© 2020 Café KA'LOC</Paper>
       </Grid>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column}>
-        <Paper className={classes.didi2}> </Paper>
+        <Paper className={classes.didi}> </Paper>
       </Grid>
     </Grid>
   );

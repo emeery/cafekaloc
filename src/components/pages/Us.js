@@ -1,18 +1,26 @@
 import React, { Fragment } from "react";
 import Toolbar from "../layout/Toolbar";
 import { makeStyles, Grid, Paper, Typography } from "@material-ui/core";
-import '../../styles/us.css';
+import Image from "../../assets/cafe2.jpg";
+import "../../styles/us.css";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop: 20,
   },
+  scheduleContainer: {
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: 410,
+  },
   paper: {
     background: "#483d8b",
     padding: theme.spacing(2),
-    textAlign: "center",
+    textAlign: "left",
     color: "lightskyblue",
-    fontFamily: "Oswald"
+    fontFamily: "Oswald",
   },
 }));
 
@@ -20,30 +28,18 @@ const Us = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <Toolbar />
-      <div className={classes.root}>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <Paper className={classes.paper}>NOSOTROS
-            </Paper>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>MISION
-            <br/>
-            La misión de una empresa declara su finalidad a partir de la pregunta «¿por qué existe este negocio?», por lo que sirve como guía a la hora de tomar decisiones estratégicas.
-            </Paper>
-            <Typography>
-            
-            </Typography>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>VISION
-            <br/>
-            La visión es una meta de plazo amplio donde se establece la aspiración sobre los logros de una empresa y lo que se desea acerca de su estado futuro. Así, define la ruta a seguir tanto para los directivos como para los empleados.    
-            </Paper>
-          </Grid>
-        </Grid>
+      <div className={classes.scheduleContainer}>
+        <Toolbar />
       </div>
+      <Grid container spacing={0}>
+      <Grid item xs={12}>
+            <Paper className={classes.paper}>
+            NUESTRA HISTORIA <br/><br/>
+            En KALOC, queremos que cada mañana se sienta como su fin de semana y su hora feliz en uno, sin importar de qué lado del mediodía sea. 
+            Somos el lugar donde puedes ser tú, y donde nuestros clientes habituales son todo lo contrario. Todos son bienvenidos en nuestra mesa, porque lo mismo ocurre con nuestra gente que con nuestros platos: los giros inesperados son los que los hacen tan especiales.
+            </Paper>
+          </Grid>
+      </Grid>
     </Fragment>
   );
 };
