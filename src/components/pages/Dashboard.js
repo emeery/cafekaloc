@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-// ui
 import { makeStyles,Paper,Grid } from "@material-ui/core";
 import Swiperr from "../utils/Swiper";
 import Image from "../../assets/cafe1.jpg";

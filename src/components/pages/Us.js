@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Toolbar from "../layout/Toolbar";
-import { makeStyles, Grid, Paper, Typography } from "@material-ui/core";
+import { makeStyles, Grid, Paper } from "@material-ui/core";
 import Image from "../../assets/cafe2.jpg";
 import "../../styles/us.css";
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${Image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: 410,
+    height: 310,
   },
   paper: {
     background: "#483d8b",
