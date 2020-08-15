@@ -53,22 +53,9 @@ const Subsidiary = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Map position={state.coordinate} zoom={state.coordinate.zoom}/>
+          <Map position={state.coordinate} zoom={state.coordinate1.zoom}/>
         </AccordionDetails>
-        <Accordion className={classes.heading}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel1a-content'
-          id='panel1a-header'
-        >
-          <Typography className={classes.font}>
-            Café KA'LOC Fray Servando
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Map position={state.coordinate} zoom={state.coordinate.zoom}/>
-        </AccordionDetails>
-      </Accordion>
+        </Accordion>
     </Fragment>
   );
 };
