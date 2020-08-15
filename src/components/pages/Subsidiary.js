@@ -36,7 +36,7 @@ const useStyles = makeStyles(() => ({
 const Subsidiary = () => {
   const classes = useStyles();
   const state = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 14 }}
-  const state2 = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 14 }}
+  // const state2 = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 14 }}
   return (
     <Fragment>
       <div className={classes.scheduleContainer}>
@@ -53,7 +53,7 @@ const Subsidiary = () => {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Map position={state.coordinate} zoom={state.coordinate1.zoom}/>
+          <Map position={state.coordinate} zoom={state.coordinate.zoom}/>
         </AccordionDetails>
         </Accordion>
     </Fragment>
