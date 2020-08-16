@@ -17,7 +17,7 @@ const styles = (theme) => ({
   icon: { width: "90px" },
   bg: { background: "transparent", boxShadow: "none" },
   title: { flexGrow: 1 },
-  button: { color: "salmon", fontFamily: "Oswald", fontSize: 12 },
+  button: { color: "salmon", fontFamily: "Oswald" },
 });
 
 class Navbar extends Component {
@@ -35,23 +35,6 @@ class Navbar extends Component {
             >
               <img src={wm} className={classes.icon} alt='icon' />
             </IconButton>
-            <Button className={classes.button} component={Link} to='/'>
-              INICIO
-            </Button>
-            <Typography variant='h6' className={classes.title}></Typography>
-            <Button className={classes.button} component={Link} to='/filial'>
-              SUCURSALES
-            </Button>
-            <Button
-              className={classes.button}
-              target='_blank'
-              href='https://www.docdroid.net/PASolYP/nuevo-pdf'
-            >
-              MENU
-            </Button>
-            <Button className={classes.button} component={Link} to='/us'>
-              NOSOTROS
-            </Button>
           </Toolbar>
         </AppBar>
       </div>

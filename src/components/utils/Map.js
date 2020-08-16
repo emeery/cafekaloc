@@ -11,7 +11,6 @@ import GoogleMapReact from "google-map-react";
 };
 
 const Map = (props) => {
-  console.log( process.env.REACT_APP_API_KEY); //
   return (
     <div style={{ height: "25vh", width: "100%" }}>
       <GoogleMapReact

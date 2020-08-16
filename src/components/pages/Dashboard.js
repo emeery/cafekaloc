@@ -6,6 +6,7 @@ import Cafe from "../../assets/cafe5.jpg";
 import Break from "../../assets/Better_Breakfast.svg";
 import Whats from "../../assets/whatsapp-icon.png";
 import Toolbar from "../layout/Toolbar";
+import Sidebar from '../layout/Sidebar';
 import Footer from "../layout/Footer";
 import party from "../../assets/partido.png";
 import "../../styles/dashboard.css";
@@ -55,8 +56,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Dashboard = () => {
   const classes = useStyles();
+
   return (
     <Fragment>
+    
       <div className={classes.scheduleContainer}>
         <Toolbar />
       </div>
