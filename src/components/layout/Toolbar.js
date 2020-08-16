@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import {
   withStyles,
   AppBar,
   Toolbar,
-  Button,
-  Typography,
 } from "@material-ui/core";
 import wm from "../../assets/kaloc3.png";
 import IconButton from "@material-ui/core/IconButton"; //

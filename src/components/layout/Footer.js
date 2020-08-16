@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles,Paper,Grid } from "@material-ui/core";
-import Didi from "../../assets/didi-food.svg";
 import Didi4 from "../../assets/didi4.png";
 import Rappi from "../../assets/rappi-logo1.png";
 import Icon from "../../assets/kaloc2.png";
