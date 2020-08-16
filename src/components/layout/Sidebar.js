@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 const Dashboard = (props) => {
   const [toogle, setToogle] = useState(false);
   const handleToogle = () => {
-    setToogle(true)
+    setToogle(!toogle)
   }
+  console.log(toogle);
   return (
     <Menu isOpen={toogle} onOpen={handleToogle} {...props}>
-      <Link onClick={() => setToogle(false)} to='/'>
-        <div className='menu-item'>INICIO</div>
-      </Link>
+    <Link className="li" onClick={() => setToogle(false)} to='/'>
+    <div className='menu-item'>INICIO</div>
+  </Link>
       <Link onClick={() => setToogle(false)} to='/us'>
         <div className='menu-item'>QUIENES SOMOS</div>
       </Link>

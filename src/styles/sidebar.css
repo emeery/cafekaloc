@@ -69,7 +69,7 @@ body {
 }
 
 .bm-burger-bars {
-    background: mediumslateblue;
+    background: khaki;
 }
 
 
@@ -102,6 +102,6 @@ body {
     font-family: 'Oswald';
 }
 
-.bm-menu-wrap {
-    background: red;
+a {
+    outline: 0;
 }
