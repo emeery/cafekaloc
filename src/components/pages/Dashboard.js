@@ -66,9 +66,9 @@ const Dashboard = () => {
       <Grid container spacing={0}>
         <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
-            <img className={classes.rotate} src={party} alt='morty' />
+            <img className={classes.rotate} src={party} alt='party' />
             &nbsp; Ven a celebrar el 25 aniversario de KA'LOC &nbsp;
-            <img src={party} alt='morty' />
+            <img src={party} alt='party' />
           </Paper>
         </Grid>
       </Grid>

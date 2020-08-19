@@ -1,21 +1,4 @@
-html,
-body {
-    margin: 0;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
-#App {
-    font-family: sans-serif;
-    height: 100vh;
-}
-
-#page-wrap {
-    text-align: center;
-    overflow: auto;
-    top: 45%;
-    position: relative;
-}
-
 .bm-item {
     display: inline-block;
     /* Our sidebar item styling */
@@ -25,8 +8,8 @@ body {
     transition: color 0.2s;
 }
 
-.bm-item:hover {
-    color: white;
+.menu-item:hover {
+    color: red;
 }
 
 .bm-burger-button {
@@ -75,31 +58,22 @@ body {
 
 /* Morph shape necessary with bubble or elastic */
 
-.bm-morph-shape {
-    fill: #373a47;
-}
-
 .bm-menu {
     background: slateblue;
-}
-
-
-/* Wrapper for item list */
-
-.bm-item-list {
-    color: #b8b7ad;
 }
 
 
 /* Styling of overlay */
 
 .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .menu-item {
     color: lightcyan;
     font-family: 'Oswald';
+    display: flex;
+    justify-content: space-evenly;
 }
 
 a {

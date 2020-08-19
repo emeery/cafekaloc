@@ -8,37 +8,10 @@ use strict
 closure // 
 git checkout HEAD src/components/auth/Signup.js
 git reset HEAD --hard
-
+ npm run build
+ 
 gerardoemery@live.com.mx
 gerardobautista40@outlook.com
 
-
-import React, { useState } from 'react';
-import 'swiper/swiper.scss';
-import Swiper from 'react-id-swiper';
-import '../styles/swiper.css';
-
-// images
-import image1 from '../assets/arroz_mixto.jpg';
-import image2 from '../assets/chop_suey.jpg';
-import image4 from '../assets/combo_kaloc.jpg';
-// slider config
-const HeroSliderConfigs = {
-  containerClass: 'swiper-container ',
-  parallax: true,
-  centeredSlides: true,
-  grabCursor: true,
-  speed: 500,
-  spaceBetween: 0,
-  effect: 'slide',
-  loop: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  }
-};
 
 totodile

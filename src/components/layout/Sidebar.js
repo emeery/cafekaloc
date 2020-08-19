@@ -1,31 +1,46 @@
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
-import "../../styles/sidebar.css";
 import { Link } from "react-router-dom";
+import party from "../../assets/chino.png";
+import china from "../../assets/china.png";
+import "../../styles/sidebar.css";
 
-const Dashboard = (props) => {
-  const [toogle, setToogle] = useState(false);
-  const handleToogle = () => {
-    setToogle(!toogle)
-  }
-  console.log(toogle);
+const Sidebar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
-    <Menu isOpen={toogle} onOpen={handleToogle} {...props}>
-    <Link className="li" onClick={() => setToogle(false)} to='/'>
-    <div className='menu-item'>INICIO</div>
-  </Link>
-      <Link onClick={() => setToogle(false)} to='/us'>
-        <div className='menu-item'>QUIENES SOMOS</div>
+    <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
+      <Link className="link" onClick={handleOpen} to='/'>
+        <div className='menu-item'>
+        <img src={party} alt='party' />
+        INICIO</div>
       </Link>
-        <a className='menu-item' onClick={() => setToogle(false)}  target="blank"
-        href='https://www.docdroid.net/PASolYP/nuevo-pdf'>MENU</a>
-      <Link onClick={() => setToogle(false)} to='/'>
-        <div className='menu-item'></div>
+      <Link onClick={handleOpen} to='/us'>
+      <div className='menu-item'>
+      <img src={party} alt='party' />MENU
+      I</div>
       </Link>
-      <Link onClick={() => setToogle(false)} to='/filial'>
-        <div className='menu-item'>SUCURSALES</div>
+      <a
+        className='menu-item'
+        onClick={handleOpen}
+        target='blank'
+        href='https://www.docdroid.net/PASolYP/nuevo-pdf'
+      >
+      <div className='menu-item'>
+      <img src={party} alt='party' />
+      MENU</div>
+      </a>
+
+      <Link onClick={handleOpen} to='/filial'>
+      <div className='menu-item'>
+      <img src={party} alt='party' />
+      SUCURSALES</div>
       </Link>
     </Menu>
   );
 };
-export default Dashboard;
+export default Sidebar;
