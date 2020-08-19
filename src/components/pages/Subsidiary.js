@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
     backgroundImage: `url(${Image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height:290,
+    height:300,
   },
   heading: {
     background: "indigo",
@@ -42,8 +42,8 @@ const useStyles = makeStyles(() => ({
 
 const Subsidiary = () => {
   const classes = useStyles();
-  const state = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 14 }}
-  // const state2 = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 14 }}
+  const state = { coordinate: {lat: 19.417417, lng: -99.103889, zoom: 15 }}
+  const state2 = { coordinate: {lat: 19.459988, lng: -99.170244, zoom: 15 }}
   return (
     <Fragment>
       <div className={classes.scheduleContainer}>
@@ -56,7 +56,7 @@ const Subsidiary = () => {
           id='panel1a-header'
         >
           <Typography className={classes.font}>
-            CAFE KA'LOC FRAY SERVANDO
+            - CAFE KA'LOC FRAY SERVANDO
           </Typography>
         </AccordionSummary>
         <Typography className={classes.info}>
@@ -68,6 +68,24 @@ const Subsidiary = () => {
           <Map position={state.coordinate} zoom={state.coordinate.zoom}/>
         </AccordionDetails>
         </Accordion>
+        <Accordion className={classes.heading}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls='panel1a-content'
+            id='panel1a-header'
+          >
+            <Typography className={classes.font}>
+              - CAFE KA'LOC CAMARONES
+            </Typography>
+          </AccordionSummary>
+          <Typography className={classes.info}>
+             Eje 3 Nte. Camarones 96, San Salvador Xochimanca, Azcapotzalco, 02870 CDMX <br/>
+            55 5341 0009
+          </Typography>
+          <AccordionDetails >
+            <Map  position={state2.coordinate} zoom={state2.coordinate.zoom}/>
+          </AccordionDetails>
+          </Accordion>
     </Fragment>
   );
 };
