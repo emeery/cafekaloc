@@ -21,7 +21,7 @@ const Sidebar = () => {
       </Link>
       <Link onClick={handleOpen} to='/us'>
       <div className='menu-item'>
-      <img src={party} alt='party' />MENU
+      <img src={party} alt='party' />NOSOTROS
       I</div>
       </Link>
       <a
@@ -37,7 +37,7 @@ const Sidebar = () => {
 
       <Link onClick={handleOpen} to='/filial'>
       <div className='menu-item'>
-      <img src={party} alt='party' />
+      <img src={china} alt='party' />
       SUCURSALES</div>
       </Link>
     </Menu>
