@@ -3,6 +3,8 @@ import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import party from "../../assets/chino.png";
 import china from "../../assets/china.png";
+import food from "../../assets/comida.png";
+import dragon from "../../assets/dragon.png";
 import "../../styles/sidebar.css";
 
 const Sidebar = () => {
@@ -21,8 +23,8 @@ const Sidebar = () => {
       </Link>
       <Link onClick={handleOpen} to='/us'>
       <div className='menu-item'>
-      <img src={party} alt='party' />NOSOTROS
-      I</div>
+      <img src={dragon} alt='party' />NOSOTROS
+		</div>
       </Link>
       <a
         className='menu-item'
@@ -31,7 +33,7 @@ const Sidebar = () => {
         href='https://www.docdroid.net/PASolYP/nuevo-pdf'
       >
       <div className='menu-item'>
-      <img src={party} alt='party' />
+      <img src={food} alt='party' />
       MENU</div>
       </a>
 
