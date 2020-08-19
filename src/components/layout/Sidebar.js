@@ -5,9 +5,17 @@ import party from "../../assets/chino.png";
 import china from "../../assets/china.png";
 import food from "../../assets/comida.png";
 import dragon from "../../assets/dragon.png";
+import wm from "../../assets/kaloc3.png";
 import "../../styles/sidebar.css";
 
+const styles = () => ({
+  icon: {
+    width: "20px",
+    background: "red" },
+});
+
 const Sidebar = () => {
+  const classes = styles();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -16,6 +24,8 @@ const Sidebar = () => {
 
   return (
     <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
+    <Link style={{display: "flex", justifyContent: "center"}} to="/"><img src={wm}  alt='icon' /></Link>
+
       <Link className="link" onClick={handleOpen} to='/'>
         <div className='menu-item'>
         <img src={party} alt='party' />
