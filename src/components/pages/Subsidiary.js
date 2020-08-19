@@ -79,7 +79,7 @@ const Subsidiary = () => {
             </Typography>
           </AccordionSummary>
           <Typography className={classes.info}>
-             Eje 3 Nte. Camarones 96, San Salvador Xochimanca, Azcapotzalco, 02870 CDMX <br/>
+             Eje 3 Nte. Camarones 80, San Salvador Xochimanca, Azcapotzalco, 02870 CDMX <br/>
             55 5341 0009
           </Typography>
           <AccordionDetails >
