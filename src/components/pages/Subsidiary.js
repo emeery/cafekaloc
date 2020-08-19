@@ -30,6 +30,13 @@ const useStyles = makeStyles(() => ({
   font: {
     fontFamily: "Oswald",
     fontSize: 15
+  },
+  info: {
+    fontFamily: "Oswald",
+    textAlign: "center",
+    fontSize: 13,
+    color: "orangered",
+    textTransform: "uppercase"
   }
 }));
 
@@ -49,9 +56,14 @@ const Subsidiary = () => {
           id='panel1a-header'
         >
           <Typography className={classes.font}>
-            Café KA'LOC Fray Servando
+            CAFE KA'LOC FRAY SERVANDO
           </Typography>
         </AccordionSummary>
+        <Typography className={classes.info}>
+          Fray Servando T. de Mier 5,
+          Jardín Balbuena, Venustiano Carranza, 15900 CDMX <br/>
+          55 5785 9137
+        </Typography>
         <AccordionDetails>
           <Map position={state.coordinate} zoom={state.coordinate.zoom}/>
         </AccordionDetails>
