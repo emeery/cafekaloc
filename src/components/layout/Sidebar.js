@@ -5,6 +5,7 @@ import party from "../../assets/chino.png";
 import china from "../../assets/china.png";
 import food from "../../assets/comida.png";
 import dragon from "../../assets/dragon.png";
+import gallery from "../../assets/galeria.png";
 import wm from "../../assets/kaloc3.png";
 import "../../styles/sidebar.css";
 
@@ -12,47 +13,52 @@ const styles = () => ({
   icon: {
     width: "20px",
     background: "red" },
-});
+  });
 
-const Sidebar = () => {
-  const classes = styles();
-  const [open, setOpen] = useState(false);
+  const Sidebar = () => {
+    const classes = styles();
+    const [open, setOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-  };
+    const handleOpen = () => {
+      setOpen(!open);
+    };
 
-  return (
-    <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
-    <Link style={{display: "flex", justifyContent: "center"}} to="/"><img src={wm}  alt='icon' /></Link>
-
+    return (
+      <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
+      <Link className={classes.icon} style={{display: "flex", justifyContent: "center"}} to="/">
+      <img src={wm}   alt='icon' />
+      </Link>
       <Link className="link" onClick={handleOpen} to='/'>
-        <div className='menu-item'>
-        <img src={party} alt='party' />
-        INICIO</div>
+      <div className='menu-item'>
+      <img src={party} alt='party' />
+      INICIO</div>
       </Link>
       <Link onClick={handleOpen} to='/us'>
       <div className='menu-item'>
       <img src={dragon} alt='party' />NOSOTROS
-		</div>
+      </div>
       </Link>
       <a
-        className='menu-item'
-        onClick={handleOpen}
-        target='blank'
-        href='https://www.docdroid.net/PASolYP/nuevo-pdf'
+      className='menu-item'
+      onClick={handleOpen}
+      target='blank'
+      href='https://www.docdroid.net/PASolYP/nuevo-pdf'
       >
       <div className='menu-item'>
       <img src={food} alt='party' />
       MENU</div>
       </a>
-
       <Link onClick={handleOpen} to='/filial'>
       <div className='menu-item'>
       <img src={china} alt='party' />
       SUCURSALES</div>
       </Link>
-    </Menu>
-  );
-};
-export default Sidebar;
+      <Link onClick={handleOpen} to='/gallery'>
+      <div className='menu-item'>
+      <img src={gallery} alt='party' />
+      GALERIA</div>
+      </Link>
+      </Menu>
+    );
+  };
+  export default Sidebar;

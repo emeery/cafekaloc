@@ -22,18 +22,18 @@ class Navbar extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar className={classes.bg} position='static'>
-          <Toolbar>
-            <IconButton
-              edge='start'
-              className={classes.menuButton}
-              color='inherit'
-              aria-label='menu'
-            >
-              <img src={wm} className={classes.icon} alt='icon' />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
+      <AppBar className={classes.bg} position='static'>
+      <Toolbar>
+      <IconButton
+      edge='start'
+      className={classes.menuButton}
+      color='inherit'
+      aria-label='menu'
+      >
+      <img src={wm} className={classes.icon} alt='icon' />
+      </IconButton>
+      </Toolbar>
+      </AppBar>
       </div>
     );
   }
