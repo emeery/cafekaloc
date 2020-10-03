@@ -1,10 +1,52 @@
 import React, { Fragment } from "react";
-import { makeStyles,Paper,Grid } from "@material-ui/core";
+import { makeStyles,Paper,Grid, GridList, GridListTile } from "@material-ui/core";
 import Toolbar from '../layout/Toolbar';
+import gallery1 from '../../assets/gallery/chow_min.jpg';
+import gallery2 from '../../assets/gallery/combinacion_kaloc.jpg';
+import gallery3 from '../../assets/gallery/arroz_mixto.jpg';
+import gallery4 from '../../assets/gallery/verduras_mixtas.jpg';
+
 import '../../styles/nav.css';
+
+const tileData = [
+     {
+       img: gallery1,
+       title: 'Image',
+       author: 'author',
+       cols: 2,
+     },
+     {
+      img: gallery2,
+      title: 'Image',
+      author: 'author',
+      cols: 2,
+    },
+    {
+      img: gallery3,
+      title: 'Image',
+      author: 'author',
+      cols: 2,
+    },
+    {
+      img: gallery4,
+      title: 'Image',
+      author: 'author',
+      cols: 2,
+    },
+    // {
+    //   img: gallery5,
+    //   title: 'Image',
+    //   author: 'author',
+    //   cols: 2,
+    // },
+   ];
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
   },
   paper: {
     padding: theme.spacing(2),
@@ -12,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
     background: 'black',
     color: "white",
     fontFamily: "Oswald"
+  },
+  gridList: {
+    width: '100%',
+    background: 'black'
   },
 }));
 
@@ -24,6 +70,14 @@ const Gallery = () => {
     <Grid container spacing={0}>
     <Grid item xs={12}>
     <Paper className={classes.paper}>GALERIA</Paper>
+    <div className={classes.root}>
+    <GridList cellHeight={180} className={classes.gridList} cols={3}>
+        {tileData.map((tile) => (
+          <GridListTile key={tile.img} cols={tile.cols || 1}>
+            <img src={tile.img} alt={tile.title} />
+          </GridListTile>
+        ))}
+      </GridList></div>
     </Grid>
     </Grid>
     </div>
