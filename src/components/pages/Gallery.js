@@ -71,7 +71,7 @@ const Gallery = () => {
     <Grid item xs={12}>
     <Paper className={classes.paper}>GALERIA</Paper>
     <div className={classes.root}>
-    <GridList cellHeight={180} className={classes.gridList} cols={3}>
+    <GridList cellHeight={350} className={classes.gridList} cols={1}>
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={tile.cols || 1}>
             <img src={tile.img} alt={tile.title} />
