@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { makeStyles,Paper,Grid, GridList, GridListTile } from "@material-ui/core";
 import Toolbar from '../layout/Toolbar';
-import gallery1 from '../../assets/gallery/chow_min.jpg';
-import gallery2 from '../../assets/gallery/combinacion_kaloc.jpg';
-import gallery3 from '../../assets/gallery/arroz_mixto.jpg';
-import gallery4 from '../../assets/gallery/verduras_mixtas.jpg';
-import gallery5 from '../../assets/gallery/chop_suey.jpg';
-import gallery6 from '../../assets/gallery/pollo_agridulce.jpg';
+import gallery1 from '../../assets/gallery/chow_min1.jpg';
+import gallery2 from '../../assets/gallery/combinacion_kaloc1.jpg';
+import gallery3 from '../../assets/gallery/arroz_mixto1.jpg';
+import gallery4 from '../../assets/gallery/verduras_mixtas1.jpg';
+import gallery5 from '../../assets/gallery/chop_suey1.jpg';
+import gallery6 from '../../assets/gallery/pollo_agridulce1.jpg';
 import gallery7 from '../../assets/gallery/costilla_horno.jpg';
 import '../../styles/nav.css';
 
@@ -85,13 +85,14 @@ const Gallery = () => {
     <Grid item xs={12}>
     <Paper className={classes.paper}>GALERIA</Paper>
     <div className={classes.root}>
-    <GridList cellHeight={350} className={classes.gridList} cols={1}>
+    <GridList cellHeight={310} className={classes.gridList} cols={1}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
+          <GridListTile style={{ width: "100%" }}he  key={tile.img} cols={tile.cols || 1}>
+            <img  src={tile.img} alt={tile.title} />
           </GridListTile>
         ))}
-      </GridList></div>
+    </GridList>
+    </div>
     </Grid>
     </Grid>
     </div>
