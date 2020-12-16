@@ -82,7 +82,7 @@ const Dashboard = () => {
           controls={true}
           width="100%"
           height="30%"
-          url={video}
+          url="https://previewvideos-vixen.ssl-cdn.com/102455/1607087483617/102455_working-the-angles_1080P.mp4"
         />
       </div>
       {/* <div className={classes.scheduleContainer}>
