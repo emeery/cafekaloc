@@ -79,7 +79,7 @@ const Dashboard = () => {
         <ReactPlayer
           muted={false}
           playing={true}
-          controls={true}
+          controls={false}
           width="100%"
           height="30%"
           url="https://previewvideos-vixen.ssl-cdn.com/102455/1607087483617/102455_working-the-angles_1080P.mp4"
