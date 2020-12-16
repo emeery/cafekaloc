@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { makeStyles, Paper, Grid } from "@material-ui/core";
-import Swiperr from "../utils/Swiper";
+// import Swiperr from "../utils/Swiper";
 import ReactPlayer from "react-player";
 import Image from "../../assets/cafe1.jpg";
 import Cafe from "../../assets/cafe5.jpg";
 import Break from "../../assets/Better_Breakfast.svg";
 import Whats from "../../assets/whatsapp-icon.png";
-import Toolbar from "../layout/Toolbar";
+// import Toolbar from "../layout/Toolbar";
 import Footer from "../layout/Footer";
 import party from "../../assets/partido.png";
 import video from "../../assets/video.mp4";
@@ -78,7 +78,7 @@ const Dashboard = () => {
         <h3 className={classes.centered}>PORTAFOLIO</h3>
         <ReactPlayer
           muted={false}
-          playing={false}
+          playing={true}
           controls={true}
           width="100%"
           height="30%"
