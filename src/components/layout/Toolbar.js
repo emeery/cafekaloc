@@ -6,7 +6,7 @@ import {
 } from "@material-ui/core";
 import wm from "../../assets/kaloc3.png";
 import IconButton from "@material-ui/core/IconButton"; //
-import "../../styles/nav.css";
+import "../../styles/font.css";
 
 const styles = (theme) => ({
   root: { height: 55 },
