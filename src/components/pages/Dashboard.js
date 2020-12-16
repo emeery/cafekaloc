@@ -75,13 +75,13 @@ const Dashboard = () => {
   return (
     <Fragment>
       <div className={classes.container}>
-        <h3 className={classes.centered}>PORTAFOLIO</h3>
+        {/* <h3 className={classes.centered}>PORTAFOLIO</h3> */}
         <ReactPlayer
           muted={false}
           playing={true}
           controls={false}
-          width="100%"
-          height="30%"
+          width="130%"
+          height="80%"
           url="https://previewvideos-vixen.ssl-cdn.com/102455/1607087483617/102455_working-the-angles_1080P.mp4"
         />
       </div>
