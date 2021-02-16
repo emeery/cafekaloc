@@ -41,6 +41,7 @@ const useStyles = makeStyles(() => ({
     backgroundSize: "cover",
   }
 }));
+
 const Footer = () => {
   const classes = useStyles();
   return (
