@@ -4,10 +4,8 @@ import Swiperr from "../utils/Swiper";
 import Image from "../../assets/cafe1.jpg";
 import Cafe from "../../assets/cafe5.jpg";
 import Break from "../../assets/Better_Breakfast.svg";
-import Whats from "../../assets/whatsapp-icon.png";
 import Toolbar from "../layout/Toolbar";
 import Footer from "../layout/Footer";
-import party from "../../assets/partido.png";
 import "../../styles/dashboard.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,44 +31,52 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     boxShadow: "none",
   },
-  whatsContainer: {
-    background: `url(${Whats})`,
-    backgroundSize: "cover",
-    width: 270,
-    height: 345,
-  },
-  stripeContainer: {
-    background: "#42296f",
+  info: {
+    background: "dimgrey",
     backgroundSize: "cover",
     color: "lightsteelblue",
     borderBottomColor: "2px solid red",
-    height: 50,
+    height:110,
+    fontFamily: "Bebas Neue",
+    fontSize: "2vw",
+    textAlign: "center",
+  },
+  stripeContainer: {
+    background: "dimgrey",
+    backgroundSize: "cover",
+    color: "darkkhaki",
+    borderBottomColor: "2px solid red",
+    height:80,
     fontFamily: "Bebas Neue",
     fontSize: "5vw",
     textAlign: "center",
   },
   rotate: {
     transform: "scaleX(-1)",
-  },
+  }
 }));
+
 const Dashboard = () => {
   const classes = useStyles();
-
   return (
     <Fragment>
-    
-      <div className={classes.scheduleContainer}>
+      {/* <div className={classes.scheduleContainer}> */}
         <Toolbar />
-      </div>
+      {/* </div> */}
       <Swiperr />
       <Grid container spacing={0}>
-        <Grid item xs={12} sm={12}>
+      <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
-            <img className={classes.rotate} src={party} alt='party' />
-            &nbsp; Ven a celebrar el 25 aniversario de KA'LOC &nbsp;
-            <img src={party} alt='party' />
+            AJM ARQUITECTURA
           </Paper>
-        </Grid>
+      </Grid>
+      <Grid item xs={12} sm={12}>
+          <Paper className={classes.info}>
+          Estudio AJM arquitectura ofrece servicios de diseño arquitectónico. <br></br>
+          Sus servicios incluyen el diseño y desarrollo arquitectónico de interiores, 
+          la selección y diseño de mobiliario, así como la supervisión arquitectónica de obra.
+          </Paper>
+      </Grid>
       </Grid>
       <Footer />
       <Paper>

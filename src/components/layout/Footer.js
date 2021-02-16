@@ -1,8 +1,6 @@
 import React from "react";
 import { makeStyles,Paper,Grid } from "@material-ui/core";
 import Didi4 from "../../assets/didi4.png";
-import Rappi from "../../assets/rappi-logo1.png";
-import Icon from "../../assets/kaloc2.png";
 
 const useStyles = makeStyles(() => ({
   stripe: {
@@ -41,37 +39,20 @@ const useStyles = makeStyles(() => ({
     margin: "auto",
     background: `url(${Didi4})`,
     backgroundSize: "cover",
-  },
-  didi2: {
-    width: 100,
-    height: 50,
-    position: "relative",
-    boxShadow: "none",
-    margin: "auto",
-    background: `url(${Rappi})`,
-    backgroundSize: "cover",
-  },
-  icon: {
-    width: 100,
-    height: 38,
-    position: "relative",
-    margin: "auto",
-    background: `url(${Icon})`,
-    backgroundSize: "cover",
-  },
+  }
 }));
 const Footer = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.stripe}>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column2}>
-        <div className={classes.didi2}> </div>
+        {/* <div className={classes.didi2}> </div> */}
       </Grid>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column}>
-        <Paper className={classes.transparent}>© 2020 Café KA'LOC</Paper>
+        <Paper className={classes.transparent}>© 2020 AJM ARQUITECTURA</Paper>
       </Grid>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column}>
-        <Paper className={classes.didi}> </Paper>
+        {/* <Paper className={classes.didi}> </Paper> */}
       </Grid>
     </Grid>
   );

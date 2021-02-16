@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
-import party from "../../assets/chino.png";
-import china from "../../assets/china.png";
-import food from "../../assets/comida.png";
-import dragon from "../../assets/dragon.png";
+import casa from "../../assets/casa.png";
+import arqui from "../../assets/arqui.png";
 import gallery from "../../assets/galeria.png";
-import wm from "../../assets/kaloc3.png";
 import "../../styles/sidebar.css";
 
-const styles = () => ({
-  icon: {
-    width: "20px",
-    background: "red" },
-  });
+// const styles = () => ({
+//   icon: {
+//     width: "20px",
+//     background: "red" ,
+//     fontFamily: "Bebas Neue"
+//   },
+//   header: {
+//     fontFamily: "Bebas Neue",
+//     color: "orange",
+//     display: "flex",
+//     justifyContent: "center"
+//   }
+//   });
 
   const Sidebar = () => {
-    const classes = styles();
+    // const classes = styles();
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
@@ -25,34 +30,30 @@ const styles = () => ({
 
     return (
       <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
-      <Link className={classes.icon} style={{display: "flex", justifyContent: "center"}} to="/">
+      {/* <Link className={classes.header} style={{display: "flex", justifyContent: "center"}} to="/">
       <img src={wm}   alt='icon' />
-      </Link>
+      AJM
+      </Link> */}
+      <div className='menu-item'>
+      <span style={{display: "flex",fontSize: 40, justifyContent: "center", color: "orange"}}  >
+        AJM
+      </span>
+      </div>
       <Link className="link" onClick={handleOpen} to='/'>
       <div className='menu-item'>
-      <img src={party} alt='party' />
+      <img src={casa} alt='party' />
       INICIO</div>
       </Link>
       <Link onClick={handleOpen} to='/us'>
       <div className='menu-item'>
-      <img src={dragon} alt='party' />NOSOTROS
+      <img src={arqui} alt='party' />QUIENES SOMOS
       </div>
       </Link>
-      <a
-      className='menu-item'
-      onClick={handleOpen}
-      target='blank'
-      href='https://www.docdroid.net/PASolYP/nuevo-pdf'
-      >
-      <div className='menu-item'>
-      <img src={food} alt='party' />
-      MENU</div>
-      </a>
-      <Link onClick={handleOpen} to='/filial'>
+      {/* <Link onClick={handleOpen} to='/filial'>
       <div className='menu-item'>
       <img src={china} alt='party' />
       SUCURSALES</div>
-      </Link>
+      </Link> */}
       <Link onClick={handleOpen} to='/gallery'>
       <div className='menu-item'>
       <img src={gallery} alt='party' />

@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// images
-import image1 from "../../assets/arroz_mixto.jpg";
-import image2 from "../../assets/chop_suey.jpg";
-import image3 from "../../assets/combo_kaloc.jpg"; 
-import image4 from "../../assets/cafe4.jpg"; 
+import image1 from "../../assets/gallery2/image1.jpeg";
+import image2 from "../../assets/gallery2/image2.jpeg";
+import image3 from "../../assets/gallery2/image3.jpeg";
+import image4 from "../../assets/gallery2/image4.jpeg";
+ 
 const SimpleSlider = () => {
   const settings = {
     dots: true,
