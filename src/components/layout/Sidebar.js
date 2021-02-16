@@ -6,22 +6,18 @@ import arqui from "../../assets/arqui.png";
 import gallery from "../../assets/galeria.png";
 import "../../styles/sidebar.css";
 
-// const styles = () => ({
-//   icon: {
-//     width: "20px",
-//     background: "red" ,
-//     fontFamily: "Bebas Neue"
-//   },
-//   header: {
-//     fontFamily: "Bebas Neue",
-//     color: "orange",
-//     display: "flex",
-//     justifyContent: "center"
-//   }
-//   });
+const styles = () => ({
+  header: {
+    fontFamily: "Bebas Neue",
+    color: "orange",
+    display: "flex",
+    justifyContent: "center",
+    fontSize: 40,
+  }
+  });
 
   const Sidebar = () => {
-    // const classes = styles();
+    const classes = styles();
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
@@ -35,7 +31,7 @@ import "../../styles/sidebar.css";
       AJM
       </Link> */}
       <div className='menu-item'>
-      <span style={{display: "flex",fontSize: 40, justifyContent: "center", color: "orange"}}  >
+      <span className={classes.header}  >
         AJM
       </span>
       </div>
