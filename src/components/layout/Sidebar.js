@@ -18,7 +18,7 @@ const styles = () => ({
   });
 
   const Sidebar = () => {
-    const classes = styles();
+    // const classes = styles();
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
@@ -35,6 +35,7 @@ const styles = () => ({
       </Typography>
       </CardContent>
       </Card>
+      <Card style={{background:"#273746",color: "#273746",textAlign: "center"}}>.</Card>
       <Card style={{background:"#273746"}}>
       {/*  */}
       <Link className="link" onClick={handleOpen} to='/'>
@@ -54,7 +55,6 @@ const styles = () => ({
       <img src={gallery} alt='party' />
       GALERIA</div>
       </Link>
-      <div></div>
       </Card>
       </div>
       </Menu>

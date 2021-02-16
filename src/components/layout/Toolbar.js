@@ -9,10 +9,10 @@ import "../../styles/nav.css";
 
 const styles = (theme) => ({
   root: { height: 55 },
-  menuButton: { marginRight: theme.spacing(2) },
+  menuButton: { marginRight: theme.spacing(2),  },
   icon: { width: "90px" },
-  bg: { background: "#a68a7c", boxShadow: "none" },
-  title: { flexGrow: 1 },
+  bg: { background: "#f2f3f4", boxShadow: "none" },
+  // title: { flexGrow: 1 },
   button: { color: "salmon", fontFamily: "Oswald" },
 });
 
@@ -29,7 +29,7 @@ class Navbar extends Component {
       color='inherit'
       aria-label='menu'
       >
-        AJM
+        <span style={{color: "red"}}>AJM</span>
       {/* <img src={wm} className={classes.icon} alt='icon' /> */}
       </IconButton>
       </Toolbar>
