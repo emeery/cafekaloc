@@ -26,7 +26,7 @@ const styles = () => ({
     };
 
     return (
-      <Menu onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
+      <Menu style={{borderStyle:"none"}} onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
       <div >
       <Card style={{background:"#273746"}} >
       <CardContent>
