@@ -8,7 +8,7 @@ import gallery4 from '../../assets/gallery/verduras_mixtas1.jpg';
 import gallery5 from '../../assets/gallery/chop_suey1.jpg';
 import gallery6 from '../../assets/gallery/pollo_agridulce1.jpg';
 import gallery7 from '../../assets/gallery/costilla_horno.jpg';
-import '../../styles/nav.css';
+import '../../styles/font.css';
 
 const tileData = [
      {

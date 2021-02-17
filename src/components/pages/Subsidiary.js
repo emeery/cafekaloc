@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Map from "../utils/Map";
-import '../../styles/nav.css';
+import '../../styles/font.css';
 
 const useStyles = makeStyles(() => ({
   root: {

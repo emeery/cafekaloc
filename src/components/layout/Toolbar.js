@@ -5,7 +5,7 @@ import {
   Toolbar,
 } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton"; //
-import "../../styles/nav.css";
+import "../../styles/font.css";
 
 const styles = (theme) => ({
   root: { height: 55 },
@@ -29,7 +29,7 @@ class Navbar extends Component {
       color='inherit'
       aria-label='menu'
       >
-        <span style={{color: "red"}}>AJM</span>
+        <span style={{color: "gray"}}>AJM</span>
       {/* <img src={wm} className={classes.icon} alt='icon' /> */}
       </IconButton>
       </Toolbar>
