@@ -34,7 +34,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "5vw",
     textAlign: "center",
   },
-  
+  scheduleContainer: {
+    backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: 410,
+  },
 }));
 
 const Dashboard = () => {
@@ -68,6 +73,7 @@ const Dashboard = () => {
           </Paper>
       </Grid>
       </Grid>
+      
       {/* <Footer /> */}
       {/* <Paper>
         <a
