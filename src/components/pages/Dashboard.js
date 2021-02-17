@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottomColor: "2px solid red",
     fontFamily: "Bebas Neue",
     fontSize: "4vw",
+    marginBottom: 50,
     textAlign: "center",
   },
   stripeContainer: {
@@ -29,12 +30,23 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     color: "darkkhaki",
     borderBottomColor: "2px solid red",
-    height:50,
+    height:60,
     fontFamily: "Bebas Neue",
-    fontSize: "5vw",
+    fontSize: "6vw",
+    textAlign: "center",
+  },
+  anotherStripe: {
+    background: "dimgrey",
+    backgroundSize: "cover",
+    color: "darkkhaki",
+    borderBottomColor: "2px solid red",
+    height:60,
+    fontFamily: "Bebas Neue",
+    fontSize: "6vw",
     textAlign: "center",
   },
   scheduleContainer: {
+    marginTop: 50,
     backgroundImage: `url(${Image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -72,8 +84,14 @@ const Dashboard = () => {
           la selección y diseño de mobiliario, así como la supervisión arquitectónica de obra.
           </Paper>
       </Grid>
+      <Grid item xs={12} sm={12}>
+          <Paper className={classes.stripeContainer}>
+           PROYECTOS
+          </Paper>
       </Grid>
-      
+      </Grid>
+
+      <div className={classes.scheduleContainer}></div>
       {/* <Footer /> */}
       {/* <Paper>
         <a
