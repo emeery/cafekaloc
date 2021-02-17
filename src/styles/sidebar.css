@@ -8,9 +8,9 @@
     transition: color 0.2s;
 }
 
-.menu-item:hover {
+/* .menu-item:hover {
     color: red;
-}
+} */
 
 .bm-burger-button {
     position: fixed;

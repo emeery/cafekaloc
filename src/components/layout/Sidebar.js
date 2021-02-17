@@ -18,7 +18,7 @@ const styles = () => ({
   });
 
   const Sidebar = () => {
-    // const classes = styles();
+    const classes = styles();
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
