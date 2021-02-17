@@ -9,62 +9,27 @@ import Break from "../../assets/Better_Breakfast.svg";
 import Toolbar from "../layout/Toolbar";
 import Footer from "../layout/Footer";
 // import party from "../../assets/partido.png";
-import video from "../../assets/video.mp4";
+// import video from "../../assets/video.mp4";
 
 import "../../styles/dashboard.css";
 import "../../styles/font.css"
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    position: 'relative',
-    textAlign: 'center',
-    color: 'white'
-  },
-  centered: {
-    position: 'absolute',
-    top: '40%',
-    left: '50%',
-    transform: "translate(-50%, -50%)",
-    fontFamily: "Oswald"
-  },
-  scheduleContainer: {
-    backgroundImage: `url(${Image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: 410,
-  },
-  saucerContainer: {
-    background: `url(${Cafe})`,
-    backgroundSize: "cover",
-    height: 410,
-  },
-  breakfastContainer: {
-    background: `url(${Break})`,
-    backgroundSize: "cover",
-    backgroundColor: "#328c99",
-    position: "relative",
-    margin: "auto",
-    width: 270,
-    height: 345,
-    marginTop: 20,
-    boxShadow: "none",
-  },
   info: {
-    background: "dimgrey",
+    background: "black",
     backgroundSize: "cover",
-    color: "lightsteelblue",
+    color: "darkgray",
     borderBottomColor: "2px solid red",
-    height:110,
     fontFamily: "Bebas Neue",
-    fontSize: "2vw",
+    fontSize: "4vw",
     textAlign: "center",
   },
   stripeContainer: {
-    background: "dimgrey",
+    background: "black",
     backgroundSize: "cover",
     color: "darkkhaki",
     borderBottomColor: "2px solid red",
-    height:80,
+    height:50,
     fontFamily: "Bebas Neue",
     fontSize: "5vw",
     textAlign: "center",
@@ -105,8 +70,8 @@ const Dashboard = () => {
           </Paper>
       </Grid>
       </Grid>
-      <Footer />
-      <Paper>
+      {/* <Footer /> */}
+      {/* <Paper>
         <a
           href="https://api.whatsapp.com/send?phone=5215546484522"
           id="fixedbutton"
@@ -118,7 +83,7 @@ const Dashboard = () => {
             src="https://images.vexels.com/media/users/3/153998/isolated/preview/3649440bec55058d9495a9e11013fedf-icono-de-trazo-coloreado-de-whatsapp-by-vexels.png"
           ></img>
         </a>
-      </Paper>
+      </Paper> */}
     </Fragment>
   );
 };

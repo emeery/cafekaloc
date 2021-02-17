@@ -11,8 +11,7 @@ const styles = (theme) => ({
   root: { height: 55 },
   menuButton: { marginRight: theme.spacing(2),  },
   icon: { width: "90px" },
-  bg: { background: "#f2f3f4", boxShadow: "none" },
-  // title: { flexGrow: 1 },
+  bg: { background: "#f8f9f9", boxShadow: "none" },
   button: { color: "salmon", fontFamily: "Oswald" },
 });
 

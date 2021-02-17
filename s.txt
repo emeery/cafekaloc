@@ -8,7 +8,7 @@ use strict
 closure // 
 git checkout HEAD src/components/auth/Signup.js
 git reset HEAD --hard
- npm run build
+npm run build
  
 gerardoemery@live.com.mx
 gerardobautista40@outlook.com
