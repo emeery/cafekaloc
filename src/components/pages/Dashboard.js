@@ -34,9 +34,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "5vw",
     textAlign: "center",
   },
-  rotate: {
-    transform: "scaleX(-1)",
-  }
+  
 }));
 
 const Dashboard = () => {
