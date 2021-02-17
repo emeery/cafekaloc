@@ -28,7 +28,7 @@ const styles = () => ({
     return (
       <Menu style={{borderStyle:"none"}} onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
       <div >
-      <Card style={{background:"#273746"}} >
+      <Card style={{background:"#273746", borderStyle: "none"}} >
       <CardContent>
       <Typography style={{fontFamily:"Bebas Neue", color: "orange", fontSize:25, textAlign: "center"}} >
       AJM ARQUITECTURA
@@ -38,19 +38,20 @@ const styles = () => ({
       <Card style={{background:"#273746",color: "#273746",textAlign: "center"}}>.</Card>
       <Card style={{background:"#273746"}}>
       {/*  */}
-      <Link className="link" onClick={handleOpen} to='/'>
+      <Link style={{textDecoration: "none"}} onClick={handleOpen} to='/'>
       <div className='menu-item'>
       <img src={casa} alt='party' />
-      INICIO</div>
+      <span >INICIO</span>
+      </div>
       </Link>
       {/*  */}
-      <Link onClick={handleOpen} to='/us'>
+      <Link style={{textDecoration: "none"}} onClick={handleOpen} to='/us'>
       <div className='menu-item'>
       <img src={arqui} alt='party' />QUIENES SOMOS
       </div>
       </Link>
       {/*  */}
-      <Link onClick={handleOpen} to='/gallery'>
+      <Link style={{textDecoration: "none"}} onClick={handleOpen} to='/gallery'>
       <div className='menu-item'>
       <img src={gallery} alt='party' />
       GALERIA</div>
