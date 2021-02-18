@@ -28,7 +28,7 @@ const styles = () => ({
     return (
       <Menu style={{borderStyle:"none"}} onClose={handleOpen} isOpen={open} onOpen={handleOpen}>
       <div >
-      <Card style={{background:"#273746", borderStyle: "none"}} >
+      <Card style={{background:"#312450", borderStyle: "none"}} >
       <CardContent>
       <Typography style={{fontFamily:"Bebas Neue", color: "orange", fontSize:25, textAlign: "center"}} >
       AJM ARQUITECTURA
