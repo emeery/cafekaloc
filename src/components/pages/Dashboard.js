@@ -36,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   anotherStripe: {
-    background: "dimgrey",
+    background: "whitesmoke",
     backgroundSize: "cover",
-    color: "darkkhaki",
+    color: "lightgrey",
     borderBottomColor: "2px solid red",
     height:60,
     fontFamily: "Bebas Neue",
@@ -92,20 +92,15 @@ const Dashboard = () => {
       </Grid>
 
       <div className={classes.scheduleContainer}></div>
+      <Grid container spacing={0}>
+      <Grid item xs={12} sm={12}>
+          <Paper className={classes.anotherStripe}>
+           CASA MANIZALES
+          </Paper>
+      </Grid>
+      </Grid>
       {/* <Footer /> */}
-      {/* <Paper>
-        <a
-          href="https://api.whatsapp.com/send?phone=5215546484522"
-          id="fixedbutton"
-        >
-          <img
-            alt="img"
-            target="_blank"
-            style={{ width: 43, margin: 15 }}
-            src="https://images.vexels.com/media/users/3/153998/isolated/preview/3649440bec55058d9495a9e11013fedf-icono-de-trazo-coloreado-de-whatsapp-by-vexels.png"
-          ></img>
-        </a>
-      </Paper> */}
+
     </Fragment>
   );
 };
