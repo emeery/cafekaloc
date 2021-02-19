@@ -99,14 +99,14 @@ const Dashboard = () => {
       <Grid container spacing={0}>
       <Grid item xs={12} sm={12}>
           <Paper className={classes.anotherStripe}>
-           PROPUESTA ECONÓMICA PERIFÉRICO
+          AV PASEO DE LAS PALMAS
           </Paper>
       </Grid>
 
       <Grid item xs={12} sm={12}>
         <div className={classes.bgContainer2}> </div>
           <Paper className={classes.anotherStripe}>
-            RESIDENCIAL PISAGUA
+          PROPUESTA ECONÓMICA PERIFÉRICO
           </Paper>
       </Grid>
       </Grid>
