@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles,Paper,Grid } from "@material-ui/core";
-import Didi4 from "../../assets/didi4.png";
 
 const useStyles = makeStyles(() => ({
   stripe: {
@@ -30,15 +29,6 @@ const useStyles = makeStyles(() => ({
     flexDirection: "column",
     height: 60,
     backgroundColor: "#263238",
-  },
-  didi: {
-    width: 94,
-    height: 50,
-    position: "relative",
-    boxShadow: "none",
-    margin: "auto",
-    background: `url(${Didi4})`,
-    backgroundSize: "cover",
   }
 }));
 
@@ -47,7 +37,6 @@ const Footer = () => {
   return (
     <Grid container className={classes.stripe}>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column2}>
-        {/* <div className={classes.didi2}> </div> */}
       </Grid>
       <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={classes.column}>
         <Paper className={classes.transparent}>© 2020 AJM ARQUITECTURA</Paper>

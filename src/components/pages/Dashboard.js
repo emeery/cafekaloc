@@ -4,8 +4,9 @@ import Swiperr from "../utils/Swiper";
 // import ReactPlayer from "react-player";
 import Image from "../../assets/gallery3/escape6.jpg";
 import Image2 from "../../assets/gallery4/escape11.jpg"
+import Image1 from "../../assets/gallery5/escape1.jpg"
 import Toolbar from "../layout/Toolbar";
-// import Footer from "../layout/Footer";cafe
+import Footer from "../layout/Footer";
 
 
 import "../../styles/dashboard.css";
@@ -45,12 +46,19 @@ const useStyles = makeStyles((theme) => ({
   
   bgContainer: {
     marginTop: 50,
-    backgroundImage: `url(${Image})`,
+    backgroundImage: `url(${Image1})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: 410,
   },
   bgContainer2: {
+    marginTop: 50,
+    backgroundImage: `url(${Image2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: 410,
+  },
+  bgContainer3: {
     marginTop: 50,
     backgroundImage: `url(${Image2})`,
     backgroundSize: "cover",
@@ -63,17 +71,6 @@ const Dashboard = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <div>
-        {/* <h3 className={classes.centered}>PORTAFOLIO</h3> */}
-        {/* <ReactPlayer
-          muted={false}
-          playing={true}
-          controls={false}
-          width="100%"
-          height="100%"
-          url="https://previewvideos-vixen.ssl-cdn.com/102455/1607087483617/102455_working-the-angles_1080P.mp4"
-        /> */}
-      </div>
       <Toolbar />
       <Swiperr />
       <Grid container spacing={0}>
@@ -82,6 +79,7 @@ const Dashboard = () => {
            AJM ARQUITECTURA
           </Paper>
       </Grid>
+
       <Grid item xs={12} sm={12}>
           <Paper className={classes.info}>
           Estudio AJM arquitectura ofrece servicios de diseño arquitectónico. <br></br>
@@ -89,17 +87,25 @@ const Dashboard = () => {
           la selección y diseño de mobiliario, así como la supervisión arquitectónica de obra.
           </Paper>
       </Grid>
+
       <Grid item xs={12} sm={12}>
           <Paper className={classes.stripeContainer}>
            PROYECTOS
           </Paper>
       </Grid>
+
       </Grid>
       <div className={classes.bgContainer}></div>
-      <Grid container spacing={0}>
       <Grid item xs={12} sm={12}>
           <Paper className={classes.anotherStripe}>
-          AV PASEO DE LAS PALMAS
+          CASA VOLCANES, LOMAS DE COCOYOC
+          </Paper>
+      </Grid>
+
+      <Grid item xs={12} sm={12}>
+        <div className={classes.bgContainer2}> </div>
+          <Paper className={classes.anotherStripe}>
+          COQUIMBO 911
           </Paper>
       </Grid>
 
@@ -109,8 +115,7 @@ const Dashboard = () => {
           PROPUESTA ECONÓMICA PERIFÉRICO
           </Paper>
       </Grid>
-      </Grid>
-      {/* <Footer /> */}
+      <Footer />
 
     </Fragment>
   );
