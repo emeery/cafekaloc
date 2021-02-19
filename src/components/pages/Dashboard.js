@@ -3,13 +3,10 @@ import { makeStyles, Paper, Grid } from "@material-ui/core";
 import Swiperr from "../utils/Swiper";
 // import ReactPlayer from "react-player";
 import Image from "../../assets/gallery3/escape6.jpg";
-// import Cafe from "../../assets/cafe5.jpg";
-// import Break from "../../assets/Better_Breakfast.svg";
-// import Whats from "../../assets/whatsapp-icon.png";
+import Image2 from "../../assets/gallery4/escape11.jpg"
 import Toolbar from "../layout/Toolbar";
-import Footer from "../layout/Footer";
-// import party from "../../assets/partido.png";
-// import video from "../../assets/video.mp4";
+// import Footer from "../layout/Footer";cafe
+
 
 import "../../styles/dashboard.css";
 import "../../styles/font.css"
@@ -45,9 +42,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "6vw",
     textAlign: "center",
   },
-  scheduleContainer: {
+  
+  bgContainer: {
     marginTop: 50,
     backgroundImage: `url(${Image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: 410,
+  },
+  bgContainer2: {
+    marginTop: 50,
+    backgroundImage: `url(${Image2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: 410,
@@ -58,7 +63,7 @@ const Dashboard = () => {
   const classes = useStyles();
   return (
     <Fragment>
-      <div className={classes.container}>
+      <div>
         {/* <h3 className={classes.centered}>PORTAFOLIO</h3> */}
         {/* <ReactPlayer
           muted={false}
@@ -69,7 +74,7 @@ const Dashboard = () => {
           url="https://previewvideos-vixen.ssl-cdn.com/102455/1607087483617/102455_working-the-angles_1080P.mp4"
         /> */}
       </div>
-        <Toolbar />
+      <Toolbar />
       <Swiperr />
       <Grid container spacing={0}>
       <Grid item xs={12} sm={12}>
@@ -90,12 +95,18 @@ const Dashboard = () => {
           </Paper>
       </Grid>
       </Grid>
-
-      <div className={classes.scheduleContainer}></div>
+      <div className={classes.bgContainer}></div>
       <Grid container spacing={0}>
       <Grid item xs={12} sm={12}>
           <Paper className={classes.anotherStripe}>
-           CASA MANIZALES
+           PROPUESTA ECONÓMICA PERIFÉRICO
+          </Paper>
+      </Grid>
+
+      <Grid item xs={12} sm={12}>
+        <div className={classes.bgContainer2}> </div>
+          <Paper className={classes.anotherStripe}>
+            RESIDENCIAL PISAGUA
           </Paper>
       </Grid>
       </Grid>
