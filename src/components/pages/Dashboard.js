@@ -2,8 +2,7 @@ import React, { Fragment } from "react";
 import { makeStyles, Paper, Grid } from "@material-ui/core";
 import Swiperr from "../utils/Swiper";
 // import ReactPlayer from "react-player";
-import Image from "../../assets/gallery3/escape6.jpg";
-import Image2 from "../../assets/gallery4/escape11.jpg"
+import Image2 from "../../assets/gallery2/escape1.jpg"
 import Image1 from "../../assets/gallery5/escape1.jpg"
 import Toolbar from "../layout/Toolbar";
 import Footer from "../layout/Footer";
@@ -28,17 +27,16 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     color: "darkkhaki",
     borderBottomColor: "2px solid red",
-    height:60,
+    height:110,
     fontFamily: "Bebas Neue",
     fontSize: "6vw",
     textAlign: "center",
   },
   anotherStripe: {
     background: "whitesmoke",
-    backgroundSize: "cover",
     color: "lightgrey",
     borderBottomColor: "2px solid red",
-    height:60,
+    height:85,
     fontFamily: "Bebas Neue",
     fontSize: "6vw",
     textAlign: "center",
@@ -112,7 +110,7 @@ const Dashboard = () => {
       <Grid item xs={12} sm={12}>
         <div className={classes.bgContainer2}> </div>
           <Paper className={classes.anotherStripe}>
-          PROPUESTA ECONÓMICA PERIFÉRICO
+          PISAGUA
           </Paper>
       </Grid>
       <Footer />
