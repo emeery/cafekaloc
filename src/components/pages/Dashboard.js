@@ -110,7 +110,7 @@ const Dashboard = () => {
       <Grid item xs={12} sm={12}>
         <div className={classes.bgContainer2}> </div>
           <Paper className={classes.anotherStripe}>
-          PISAGUA
+          PISAGUA 
           </Paper>
       </Grid>
       <Footer />
@@ -118,5 +118,5 @@ const Dashboard = () => {
     </Fragment>
   );
 };
-
+//  
 export default Dashboard;
