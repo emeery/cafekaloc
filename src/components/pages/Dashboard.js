@@ -107,12 +107,12 @@ const Dashboard = () => {
           </Paper>
       </Grid>
 
-      <Grid item xs={12} sm={12}>
+      {/* <Grid item xs={12} sm={12}>
         <div className={classes.bgContainer2}> </div>
           <Paper className={classes.anotherStripe}>
           PISAGUA 
           </Paper>
-      </Grid>
+      </Grid> */}
       <Footer />
 
     </Fragment>
