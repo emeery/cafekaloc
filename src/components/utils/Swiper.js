@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image1 from "../../assets/gallery1/escape1.jpg";
-import image2 from "../../assets/gallery1/escape2.jpg";
-import image3 from "../../assets/gallery1/escape3.jpg";
-import image4 from "../../assets/gallery1/escape4.jpg";
+// import image2 from "../../assets/gallery1/escape2.jpg";
+// import image3 from "../../assets/gallery1/escape3.jpg";
+// import image4 from "../../assets/gallery1/escape4.jpg";
  
 const SimpleSlider = () => {
   const settings = {
@@ -23,9 +23,6 @@ const SimpleSlider = () => {
       <div style={{ width: "100%",marginBottom:"2em",background:"transparent" }}>
         <Slider {...settings}>
           <img src={image1} width='100%' alt='img1' />
-          <img src={image2} width='100%' alt='img2' />
-          <img src={image3} width='100%' alt='img4' />
-          <img src={image4} width='100%' alt='img4' />
         </Slider>
       </div>
     </Fragment>

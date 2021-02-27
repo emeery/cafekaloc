@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { makeStyles, Paper, Grid } from "@material-ui/core";
 import Swiperr from "../utils/Swiper";
 // import ReactPlayer from "react-player";
-import Image2 from "../../assets/gallery2/escape1.jpg"
-import Image1 from "../../assets/gallery5/escape1.jpg"
+import Image2 from "../../assets/gallery2/escape2.jpg"
+import Image1 from "../../assets/gallery1/escape1.jpg"
 import Toolbar from "../layout/Toolbar";
 import Footer from "../layout/Footer";
 
@@ -56,13 +56,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     height: 410,
   },
-  bgContainer3: {
-    marginTop: 50,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: 410,
-  },
+  // bgContainer3: {
+  //   marginTop: 50,
+  //   backgroundImage: `url(${Image2})`,
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center",
+  //   height: 410,
+  // },
 }));
 
 const Dashboard = () => {
